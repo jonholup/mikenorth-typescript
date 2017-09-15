@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- 'stable'
+
+script: npm run test:ci
+
+env:
+  - EXERCISE=cashier
+  - EXERCISE=accounts
+  - EXERCISE=dealer
+  - EXERCISE=color-functions
+
+branches:
+  except:
+  - master
